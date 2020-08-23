@@ -2,9 +2,9 @@ module.exports = {
   name: 'Member Move Voice Channel',
   isEvent: true,
 
-  fields: ['Temp Variable Name (Stores member that entered the channel):', 'Temp Variable Name (Stores channel that the member joined):'],
+  fields: ['Temp Variable Name (Stores member that entered the channel):', 'Temp Variable Name (Stores channel that the member left):'],
 
-  mod (DBM) {
+  mod: function (DBM) {
     DBM.Events = DBM.Events || {}
     const { Actions, Bot } = DBM
 
